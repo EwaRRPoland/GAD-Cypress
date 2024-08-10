@@ -68,7 +68,7 @@
 
 ## Struktura katalogów i plików:
 
-[](https://github.com/EwaRRPoland/GAD-Cypress/blob/32b680ca26bfad77d17925b69239eec8d606d80a/assets/file_structure.jpg)
+![](https://github.com/EwaRRPoland/GAD-Cypress/blob/32b680ca26bfad77d17925b69239eec8d606d80a/assets/file_structure.jpg)
 
 ## Plik z testami:
 
