@@ -52,7 +52,7 @@
 
   - Po zapisaniu pliku `YAML`, wrzucamy go na `GitHuba`.
 
-  - Workflow zostanie automatycznie uruchomiony przy kolejnym `pushu` do gałęzi main.
+  - Workflow zostanie automatycznie uruchomiony przy kolejnym `push` do gałęzi main.
 
 - ## Sprawdzanie wyników w zakładce Actions:
 
@@ -69,32 +69,36 @@
 ## Struktura katalogów i plików:
 
 ```
-## cypress-js-tests/
+## GAD-CYPRESS/
   │
- cypress/
-    │
-    ├── e2e/
-    │ ├── 1-getting-started/
-    │ ├── 2-advanced-examples/
-    │ ├── login_tests.cy.js
-    │ └── spec.cy.js
-    │
-    ├── fixtures/
-    │
-    ├── support/
-    │
-    ├── node_modules/
-    │
-    ├── cypress.config.js
-    ├── package-lock.json
-    └── package.json
+  .github/
+  |  │
+  |  ├── workflows/
+  |      └── main.yml
+  cypress/
+  | │
+  | ├── e2e/
+  │ ├── 1-getting-started/
+  │ ├── 2-advanced-examples/
+  │ ├── login_tests.cy.js
+  │ └── spec.cy.js
+  │
+  | ├── fixtures/
+  │
+  ├── support/
+  │
+  ├── node_modules/
+  │
+  ├── cypress.config.js
+  ├── package-lock.json
+  └── package.json
 ```
 
 ## Plik z testami:
 
 # Zastosowanie Page object pattern w testach.
 
-1. Poprzednie testy z wykorzystaniem wzorca `Page object pattern` - `login.cy.js`.
+1. Testy z wykorzystaniem wzorca `Page object pattern` - `login.cy.js`.
 
 2. Każda strona ma swój własny plik w folderze `pages`:
 
