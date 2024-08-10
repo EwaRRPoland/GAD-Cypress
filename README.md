@@ -68,31 +68,7 @@
 
 ## Struktura katalogów i plików:
 
-```
-## GAD-CYPRESS/
-  │
-  .github/
-  |  │
-  |  ├── workflows/
-  |      └── main.yml
-  cypress/
-  | │
-  | ├── e2e/
-  │ ├── 1-getting-started/
-  │ ├── 2-advanced-examples/
-  │ ├── login_tests.cy.js
-  │ └── spec.cy.js
-  │
-  | ├── fixtures/
-  │
-  ├── support/
-  │
-  ├── node_modules/
-  │
-  ├── cypress.config.js
-  ├── package-lock.json
-  └── package.json
-```
+[](https://github.com/EwaRRPoland/GAD-Cypress/blob/32b680ca26bfad77d17925b69239eec8d606d80a/assets/file_structure.jpg)
 
 ## Plik z testami:
 
