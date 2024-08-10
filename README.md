@@ -30,6 +30,40 @@
 
 13. ## Ponowne uruchomienia Cypress na komendę w VScode/terminal `npx cypress open`.
 
+# 2. CI/CD Actions
+
+- ## Konfiguracja workflow w GitHub Actions:
+
+  - Przechodzimy do repozytorium na GitHubie.
+
+  - Wybieramy zakładkę “Actions”.
+
+  - Klikamy przycisk “Set up a workflow yourself” (konfiguracja własnego workflow).
+
+  - Tworzymy plik `YAML`, np. `main.yml`, w folderze `.github/workflows`.
+
+- ## Sprawdzanie poprawności pliku YAML:
+
+  - Otwieramy plik `main.yml` i upewniamy się, że zawiera poprawne definicje zadań (jobs) i kroków (steps).
+
+  - Dostosowujemy konfigurację do naszych potrzeb.
+
+- ## Testowanie workflow:
+
+  - Po zapisaniu pliku `YAML`, wrzucamy go na `GitHuba`.
+
+  - Workflow zostanie automatycznie uruchomiony przy kolejnym `pushu` do gałęzi main.
+
+- ## Sprawdzanie wyników w zakładce Actions:
+
+  - Wchodzimy do zakładki “Actions” i wybieramy nasz workflow.
+
+  - Sprawdzamy, czy wszystko działa poprawnie.
+
+  - Jeśli coś wymaga poprawek, dostosowujemy plik `YAML` lub kod.
+
+---
+
 # Gdzie znajdziesz początkowe testy?:
 
 ## Struktura katalogów i plików:
