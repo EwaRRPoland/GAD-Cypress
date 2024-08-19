@@ -12,17 +12,17 @@ beforeEach('Go to page GAD register', () => {
     
  it("Test1: should register with lamambadaLambada@gmail.com", () => {
     // create user1
-     userCreate.register('Annaa', 'Labaa', 'lamambadaLambada@gmail.com', '1234567890');
+     userCreate.register('Annaa', 'Labaa', 'lamambadaLambada12@gmail.com', '1234567890');
 
  });
     it("Test2: should register with testowyqa@qa.team", () => {
     // create user2
-     userCreate.register('Ola', 'Baa', 'testowyqa@qa.team', 'pierduleczka1258-8');
+     userCreate.register('Ola', 'Baa', 'testowyqa12@qa.team', 'pierduleczka1258-8');
 
     });
     it("Test3: should register with helikopter56@gmail.com", () => {
     // create user3
-     userCreate.register('Viola', 'Sass', 'helikopter56@gmail.com', '1232645897890');
+     userCreate.register('Viola', 'Sass', 'helikopter5689@gmail.com', '1232645897890');
 
  });
 });
