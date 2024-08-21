@@ -1,5 +1,9 @@
 import { Login } from "../pages/Login";
 import { HomePage } from "../pages/HomePage";
+// data users
+import { firstName1, lastName1, email1, password1 } from '../support/data/dataUsers';
+import { firstName2, lastName2, email2, password2 } from '../support/data/dataUsers';
+import { firstName3, lastName3, email3, password3 } from '../support/data/dataUsers';
 
 const loginPage = new Login();
 const homePage = new HomePage();
@@ -9,23 +13,6 @@ describe("Get all users POP", () => {
  beforeEach('Go to page GAD login', () => {
         loginPage.navigate();
 });  
-  // user1
-    const firstName1='Angelika';
-    const lastName1='Wolak';
-    const email1='dagma123@zoo.pl';
-    const password1 = 'flipiflap';
-    
-    // user2
-    const firstName2='Ola';
-    const lastName2='Wolak';
-    const email2='paczka123@zoo.pl';
-    const password2 = '789987';
-    
-    // user3
-    const firstName3='Adam';
-    const lastName3='Japan';
-    const email3='woda123@zoo.pl';
-    const password3= '123321';
   
 it("Test1: should login user1", () => {
     // login
