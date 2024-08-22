@@ -13,7 +13,6 @@ export class Profile {
         cy.get("#email").clear();
         cy.get("#email").type(emailNew);
 
-       //cy.get("#avatar").clear();
        cy.get("#avatar").type('{selectall}{del}');
        cy.get("#avatar").type(avatar);
        
@@ -35,7 +34,6 @@ export class Profile {
         cy.get("#password").clear();
         cy.get("#password").type(password);
 
-        //cy.get("#avatar").clear();
         cy.get("#avatar").type('{selectall}{del}');
         cy.get("#avatar").type(avatar);
 

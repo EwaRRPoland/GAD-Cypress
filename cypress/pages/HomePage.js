@@ -19,10 +19,40 @@ export class HomePage {
         cy.get('[data-testid="deleteButton"]').click();
     }
 
-    // menu-main-gui buttons:
-
+    // menu-main-gui buttons L:
+    
+// get all users
     getUsers() {
-        // get all users
         cy.contains('Users').click();
+    }
+
+    // get all articles
+    getArticles() {
+        cy.contains('Articles').click();
+    }
+
+    // get all comments
+    getComments() {
+        cy.contains('Comments').click();
+    }
+
+    // get all flashposts
+    getFlashposts() {
+        cy.contains('Flashposts').click();
+    }
+
+    // get statistics
+    getStatistics() {
+        cy.contains('Statistics').click();
+    }
+    // menu-main-gui buttons R:
+
+    backofficeTools() {
+        // Visit Backoffice Tools
+        cy.get('[href="/tools/backoffice.html"] > .hovertext > img').click();
+    }
+    jaktestowacPl() {
+        // Visit jaktestowac.pl
+        cy.get('[style="text-decoration: none; color: white"] > .hovertext > img').click();
     }
 }
