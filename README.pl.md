@@ -74,9 +74,9 @@
 
 # Zastosowanie Page object pattern w testach.
 
-1. Testy z wykorzystaniem wzorca `Page object pattern` - `login.cy.js`.
+1. Testy z wykorzystaniem wzorca `Page object pattern` - np.: `login.cy.js`.
 
-2. Każda strona ma swój własny plik w folderze `pages`:
+2. Każda strona ma swój własny plik w folderze `pages` np.:
 
 a. Dla strony logowania istnieje plik `Login.js`.
 
