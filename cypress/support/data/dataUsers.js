@@ -2,20 +2,20 @@
 // user1
 export const firstName1='Angelika';
 export const lastName1='Wolak';
-export const email1='dagma123@zoo.pl';
-export const password1 = 'flipiflap';
+export const email1='dagma1234@zoo.pl';
+export const password1 = 'flipiflap0';
     
 // user2
 export const firstName2='Ola';
 export const lastName2='Wolak';
-export const email2='paczka123@zoo.pl';
-export const password2 = '789987';
+export const email2='paczka1235@zoo.pl';
+export const password2 = '7899870';
     
 // user3
 export const firstName3='Adam';
 export const lastName3='Japan';
-export const email3 = 'woda123@zoo.pl';
-export const password3 = '123321';
+export const email3 = 'woda1237@zoo.pl';
+export const password3 = '1233210';
     
 // positive
 // userNew1
