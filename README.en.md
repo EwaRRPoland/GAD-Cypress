@@ -68,14 +68,24 @@
 
 ![](https://github.com/EwaRRPoland/GAD-Cypress/blob/32b680ca26bfad77d17925b69239eec8d606d80a/assets/file_structure.jpg)
 
-## Test File:
+## Test file:
 
-# Applying the Page Object Pattern in Tests.
+# Automated testing, Frontend Automation:
 
-1. Tests using the `Page Object Pattern` - `login.cy.js`.
+# Tests: `cypress/e2e/`
 
-2. Each page has its own file in the `pages` folder:
+- section coverage: login, users, articles
 
-   a. For the login page, there is a file named `Login.js`.
+# Application of the Page Object Pattern in tests.
 
-   b. For the home page, there is a file named `HomePage.js`.
+1. Tests using the `Page object pattern` - for example: `login.cy.js`.
+
+2. Each page has its own file in the `cypress/pages` folder (test logic), such as:
+
+   a. For the login page, there is a file `Login.js`,
+
+   b. For the home page, there is a file `HomePage.js`.
+
+3. Test data can be found in: `cypress/data/`, for example:
+
+   For login, there is a file `dataUsers.js`.

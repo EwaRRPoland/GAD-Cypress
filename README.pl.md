@@ -72,12 +72,22 @@
 
 ## Plik z testami:
 
+# Testy automatyczne, testowanie frontend'u:
+
+# Testy: `cypress/e2e/`
+
++ pokrycie sekcji: login, users, articles
+
 # Zastosowanie Page object pattern w testach.
 
 1. Testy z wykorzystaniem wzorca `Page object pattern` - np.: `login.cy.js`.
 
-2. Każda strona ma swój własny plik w folderze `pages` np.:
+2. Każda strona ma swój własny plik w folderze `cypress/pages` (logika testów) np.:
 
-a. Dla strony logowania istnieje plik `Login.js`.
+a. Dla strony logowania istnieje plik `Login.js`,
 
 b. Dla strony głównej istnieje plik `HomePage.js`.
+
+3. Dane do testów znajdziesz: `cypress/data/` np.:
+
+Dla logowania istniej plik `dataUsers.js`.
