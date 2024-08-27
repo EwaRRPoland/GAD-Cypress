@@ -5,12 +5,27 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout the repository
+        uses: actions/checkout@v3
+      - name: Run GAD in Docker Image
+        run: docker run -p 3000:3000 -d jaktestowac/gad
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: "18"
       - name: Install Dependencies
         run: npm ci
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
+        env:
+          BASE_URL: ${{ secrets.BASE_URL }}
+          USER_EMAIL: ${{ secrets.USER_EMAIL }}
+          USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
+          USER_ID: ${{ secrets.USER_ID }}
+      - name: Archive tests results
+        if: success() || failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-report
+          path: |
+            ./Cypress tests/**/*.*
