@@ -17,6 +17,12 @@ export class HomePage {
     deleteUser() {
         //Delete user
         cy.get('[data-testid="deleteButton"]').click();
+//         cy.window().then((win) => {
+//   cy.stub(win, 'confirm').returns(true);
+//   // Akcja, która wywołuje okienko potwierdzenia
+//   cy.get('button#delete-account').click();
+//});
+
     }
 
     // menu-main-gui buttons L:
