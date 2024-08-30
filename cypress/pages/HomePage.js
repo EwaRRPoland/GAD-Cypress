@@ -15,17 +15,20 @@ export class HomePage {
         cy.get('#btnArticlesLink > .button-primary').click();
     }
     deleteUser() {
-        //Delete user
-        cy.get('[data-testid="deleteButton"]').click();
-//         cy.window().then((win) => {
-//   cy.stub(win, 'confirm').returns(true);
-//   // Akcja, która wywołuje okienko potwierdzenia
-//   cy.get('button#delete-account').click();
-//});
+        // delete user
+cy.get('[data-testid="deleteButton"]').click();
 
-    }
+// Access the window object of the current page and stub the confirm method to automatically return true
+cy.window().then((win) => {
+    cy.stub(win, 'confirm').returns(true);
+});
 
-    // menu-main-gui buttons L:
+// Wait for 500ms to ensure the confirmation window has been replaced
+cy.wait(500);
+
+}
+
+// menu-main-gui buttons L:
     
 // get all users
     getUsers() {

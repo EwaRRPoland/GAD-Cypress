@@ -1,5 +1,5 @@
 import { Login } from "../pages/Login";
-import { CreateUser, Users } from "../pages/Users";
+import { CreateUser } from "../pages/Users";
 import { HomePage } from "../pages/HomePage";
 
 // data users

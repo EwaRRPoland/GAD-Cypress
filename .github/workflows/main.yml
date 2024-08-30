@@ -28,4 +28,5 @@ jobs:
         with:
           name: test-report
           path: |
-            ./Cypress tests/**/*.*
+            ./cypress-report/**/*.*
+            ./cypress-test-results/**/*.*
