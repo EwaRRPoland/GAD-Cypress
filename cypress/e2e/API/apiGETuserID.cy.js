@@ -14,7 +14,7 @@ describe('httpGAD tests GET user by ID', () => {
   it('response code should be 200 and body should not be empty', () => {
     cy.request({
       method: 'GET',
-      url: 'http://localhost:3000/api/users/30',
+      url: 'http://localhost:3000/api/users/9',
       headers: {
         'Authorization': 'Bearer your_access_token_here'
       }
