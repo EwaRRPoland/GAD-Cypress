@@ -1,11 +1,13 @@
+import { user1Data } from '../../support/data/apiDataUsers';
+
 describe('httpGAD tests login user', () => {
    
     const request1 = {
         method: 'POST',
         url: 'http://localhost:3000/api/login',
         body: {
-            email: 'Agatea@exa.com',
-            password: '123koala23'
+            email: user1Data.email,
+            password: user1Data.password
         },
         failOnStatusCode: false
     };
