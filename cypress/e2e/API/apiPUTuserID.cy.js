@@ -27,7 +27,7 @@ describe('httpGAD tests create user', () => {
     it('response code should be 201 and should return user ID', () => {
         cy.request({
             method: 'PUT',
-            url: 'http://localhost:3000/api/users/12',
+            url: 'http://localhost:3000/api/users/16',
             body: newUser1Data,
             headers: {
                 Authorization: `Bearer ${accessToken}`
