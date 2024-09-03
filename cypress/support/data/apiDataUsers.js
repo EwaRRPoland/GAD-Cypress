@@ -1,3 +1,4 @@
+// user data positive
 export const user1Data = {
     email: 'user1a@example.com',
     firstname: 'John',
@@ -21,6 +22,37 @@ export const user3Data = {
     password: 'password789',
     avatar: 'avatar3.jpg'
 };
+
+// PATCH
+// change password
+export const user1DataPATCH = {
+    email: 'user1a@example.com',
+    firstname: 'John',
+    lastname: 'Doe',
+    password: '123mmmmm',
+    avatar: 'avatar1.jpg'
+};
+
+// change firstname
+export const user2DataPATCH = {
+    email: 'user2@example.com',
+    firstname: 'Joo',
+    lastname: 'Smith',
+    password: 'password456',
+    avatar: 'avatar2.jpg'
+};
+
+// change lastname
+export const user3DataPATCH = {
+    email: 'user3@example.com',
+    firstname: 'Alice',
+    lastname: 'McLaud',
+    password: 'password789',
+    avatar: 'avatar3.jpg'
+};
+
+// new user data PUT
+
 export const newUser1Data = {
     email: 'random1@example.com',
     firstname: 'Michael',

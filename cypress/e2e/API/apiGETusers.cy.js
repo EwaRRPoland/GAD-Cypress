@@ -6,8 +6,6 @@ describe('httpGAD tests GET users', () => {
 
       assert.equal(200, status);
         assert.isNotEmpty(body, 'Response body is not empty');
-      //   	Response body - console
-        //console.log(body);
         cy.log('Response body:', response.body);
     });
   });

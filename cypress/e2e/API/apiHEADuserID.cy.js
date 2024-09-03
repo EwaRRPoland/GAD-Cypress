@@ -6,8 +6,6 @@ describe('httpGAD tests HEAD users by ID - info about user', () => {
 
       assert.equal(200, status);
       assert.isNotEmpty(headers, 'Response headers is not empty');
-      // Response headers - console
-      //console.log(headers);
       cy.log('Response headers:', response.headers);
     });
   });
