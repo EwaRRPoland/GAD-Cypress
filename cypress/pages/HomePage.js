@@ -22,10 +22,7 @@ cy.get('[data-testid="deleteButton"]').click();
 cy.window().then((win) => {
     cy.stub(win, 'confirm').returns(true);
 });
-
-// Wait for 500ms to ensure the confirmation window has been replaced
-cy.wait(500);
-
+         cy.get('[data-testid="deleteButton"]').should('not.exist');
 }
 
 // menu-main-gui buttons L:

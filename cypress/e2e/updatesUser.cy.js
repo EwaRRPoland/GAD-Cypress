@@ -34,7 +34,14 @@ it("Test1: should login user1", () => {
     homePage.myProfile();
     // edit profile
     profile.editProfile();
-    profile.edit(`${firstNameNew1}`, `${lastNameNew1}`, `${emailNew1}`, `${avatarNew1}`)
+    profile.edit(`${firstNameNew1}`, `${lastNameNew1}`, `${emailNew1}`, `${avatarNew1}`);
+    // logout
+    homePage.navigate();
+    homePage.logout();
+    // re - login after edition
+    loginPage.navigate();
+    loginPage.login(`${emailNew1}`, `${password1}`);
+
 });
     
 it("Test2: should login user2", () => {
@@ -48,7 +55,13 @@ it("Test2: should login user2", () => {
     homePage.myProfile();
     // edit profile
     profile.editProfile();
-    profile.editWithPassword(`${firstNameNew2}`, `${lastNameNew2}`, `${emailNew2}`, `${passwordNew2}`, `${avatarNew2}`)
+    profile.editWithPassword(`${firstNameNew2}`, `${lastNameNew2}`, `${emailNew2}`, `${passwordNew2}`, `${avatarNew2}`);
+    // logout
+    homePage.navigate();
+    homePage.logout();
+    // re - login after edition
+    loginPage.navigate();
+    loginPage.login(`${emailNew2}`, `${passwordNew2}`);
 });
   
 it("Test3: should login user3", () => {
@@ -62,7 +75,13 @@ it("Test3: should login user3", () => {
     homePage.myProfile();
     // edit profile
     profile.editProfile();
-    profile.editWithPassword(`${firstNameNew3}`, `${lastNameNew3}`, `${emailNew3}`, `${passwordNew3}`, `${avatarNew3}`)
+    profile.editWithPassword(`${firstNameNew3}`, `${lastNameNew3}`, `${emailNew3}`, `${passwordNew3}`, `${avatarNew3}`);
+  // logout
+    homePage.navigate();
+    homePage.logout();
+    // re - login after edition
+    loginPage.navigate();
+    loginPage.login(`${emailNew3}`, `${passwordNew3}`);
 });
     afterEach('delete user', ()=> {
   // delete user
