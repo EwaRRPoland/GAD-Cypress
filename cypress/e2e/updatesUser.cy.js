@@ -40,7 +40,13 @@ it("Test1: should login user1", () => {
     homePage.logout();
     // re - login after edition
     loginPage.navigate();
-    loginPage.login(`${emailNew1}`, `${password1}`);
+  loginPage.login(`${emailNew1}`, `${password1}`);
+  // delete user
+  homePage.navigate();
+  homePage.deleteUser();
+  // re - login after delete user
+    loginPage.navigate();
+  loginPage.login(`${emailNew1}`, `${password1}`);
 
 });
     
@@ -61,7 +67,13 @@ it("Test2: should login user2", () => {
     homePage.logout();
     // re - login after edition
     loginPage.navigate();
-    loginPage.login(`${emailNew2}`, `${passwordNew2}`);
+  loginPage.login(`${emailNew2}`, `${passwordNew2}`);
+  // delete user
+  homePage.navigate();
+  homePage.deleteUser();
+  // re - login after delete user
+    loginPage.navigate();
+  loginPage.login(`${emailNew2}`, `${passwordNew2}`);
 });
   
 it("Test3: should login user3", () => {
@@ -81,12 +93,13 @@ it("Test3: should login user3", () => {
     homePage.logout();
     // re - login after edition
     loginPage.navigate();
-    loginPage.login(`${emailNew3}`, `${passwordNew3}`);
-});
-    afterEach('delete user', ()=> {
+  loginPage.login(`${emailNew3}`, `${passwordNew3}`);
   // delete user
   homePage.navigate();
   homePage.deleteUser();
+  // re - login after delete user
+    loginPage.navigate();
+  loginPage.login(`${emailNew3}`, `${passwordNew3}`);
 });
 });
     

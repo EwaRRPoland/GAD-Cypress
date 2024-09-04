@@ -26,7 +26,7 @@ export const user3Data = {
 // PATCH
 // change password
 export const user1DataPATCH = {
-    email: 'user1a@example.com',
+    email: 'user1abc@example.com',
     firstname: 'John',
     lastname: 'Doe',
     password: '123mmmmm',
@@ -35,7 +35,7 @@ export const user1DataPATCH = {
 
 // change firstname
 export const user2DataPATCH = {
-    email: 'user2@example.com',
+    email: 'user2bc@example.com',
     firstname: 'Joo',
     lastname: 'Smith',
     password: 'password456',
@@ -44,7 +44,7 @@ export const user2DataPATCH = {
 
 // change lastname
 export const user3DataPATCH = {
-    email: 'user3@example.com',
+    email: 'user3bc@example.com',
     firstname: 'Alice',
     lastname: 'McLaud',
     password: 'password789',
@@ -54,7 +54,7 @@ export const user3DataPATCH = {
 // new user data PUT
 
 export const newUser1Data = {
-    email: 'random1@example.com',
+    email: 'random1bc@example.com',
     firstname: 'Michael',
     lastname: 'Brown',
     password: 'randomPass1',
@@ -62,7 +62,7 @@ export const newUser1Data = {
 };
 
 export const newUser2Data = {
-    email: 'random2@example.com',
+    email: 'random2bc@example.com',
     firstname: 'Emily',
     lastname: 'Davis',
     password: 'randomPass2',
@@ -70,7 +70,7 @@ export const newUser2Data = {
 };
 
 export const newUser3Data = {
-    email: 'random3@example.com',
+    email: 'random3bc@example.com',
     firstname: 'David',
     lastname: 'Wilson',
     password: 'randomPass3',

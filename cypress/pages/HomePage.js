@@ -14,16 +14,20 @@ export class HomePage {
         //GET my articles
         cy.get('#btnArticlesLink > .button-primary').click();
     }
-    deleteUser() {
-        // delete user
-cy.get('[data-testid="deleteButton"]').click();
 
-// Access the window object of the current page and stub the confirm method to automatically return true
-cy.window().then((win) => {
-    cy.stub(win, 'confirm').returns(true);
-});
-         cy.get('[data-testid="deleteButton"]').should('not.exist');
+    deleteUser() {
+    // delete user
+    cy.get('[data-testid="deleteButton"]').click();
+
+    // Access the window object of the current page and stub the alert method
+    cy.window().then((win) => {
+        cy.stub(win, 'alert').as('alertStub');
+    });
+
+    // Verify the user is deleted
+    cy.get('[data-testid="deleteButton"]').should('not.exist');
 }
+
 
 // menu-main-gui buttons L:
     
