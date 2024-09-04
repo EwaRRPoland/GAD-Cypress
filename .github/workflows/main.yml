@@ -34,6 +34,9 @@ jobs:
           ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
           ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
 
+      - name: List test result files
+        run: ls -R results
+
       - name: Archive tests results
         if: success() || failure()
         uses: actions/upload-artifact@v3
