@@ -7,14 +7,23 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v3
+
       - name: Run GAD in Docker Image
         run: docker run -p 3000:3000 -d jaktestowac/gad
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: "18"
+
       - name: Install Dependencies
         run: npm ci
+
+      - name: Create directories for test results
+        run: |
+          mkdir -p results/cypress-report
+          mkdir -p results/cypress-test-results
+
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         env:
@@ -24,11 +33,12 @@ jobs:
           USER_ID: ${{ secrets.USER_ID }}
           ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
           ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+
       - name: Archive tests results
         if: success() || failure()
         uses: actions/upload-artifact@v3
         with:
           name: test-report
           path: |
-            ./cypress-report/**/*.*
-            ./cypress-test-results/**/*.*
+            ./results/cypress-report/**/*.*
+            ./results/cypress-test-results/**/*.*
