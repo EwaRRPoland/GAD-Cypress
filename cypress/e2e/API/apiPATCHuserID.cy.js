@@ -129,7 +129,7 @@ describe('httpGAD tests create user', () => {
             cy.log('Access Token:', accessToken3);
         });
     });
-//
+
 // update user1 PATCH
     it('response code should be 200 and should return updated user1 data', () => {
         cy.request({
@@ -191,6 +191,67 @@ describe('httpGAD tests create user', () => {
         });
     });
 
+// login and auth. user1 user1DataPATCH after PATCH
+    const request44 = {
+        method: 'POST',
+        url: 'http://localhost:3000/api/login',
+        body: {
+            email: user1DataPATCH.email,
+            password: user1DataPATCH.password
+        },
+        failOnStatusCode: false
+    };
+
+    it('response code should be 200 and should return access_token', () => {
+        cy.request(request44).then(response => {
+            const status = response.status;
+            assert.equal(200, status);
+            assert.isNotNull(response.body.access_token, 'Access token is present');
+            accessToken1 = response.body.access_token;
+            cy.log('Access Token:', accessToken1);
+        });
+    });
+
+    // login and auth. user2 user2DataPATCH after PATCH
+    const request45 = {
+        method: 'POST',
+        url: 'http://localhost:3000/api/login',
+        body: {
+            email: user2DataPATCH.email,
+            password: user2DataPATCH.password
+        },
+        failOnStatusCode: false
+    };
+
+    it('response code should be 200 and should return access_token', () => {
+        cy.request(request45).then(response => {
+            const status = response.status;
+            assert.equal(200, status);
+            assert.isNotNull(response.body.access_token, 'Access token is present');
+            accessToken2 = response.body.access_token;
+            cy.log('Access Token:', accessToken2);
+        });
+    });
+    // login and auth. user3 user3DataPATCH after PATCH
+    const request46 = {
+        method: 'POST',
+        url: 'http://localhost:3000/api/login',
+        body: {
+            email: user3DataPATCH.email,
+            password: user3DataPATCH.password
+        },
+        failOnStatusCode: false
+    };
+
+    it('response code should be 200 and should return access_token', () => {
+        cy.request(request46).then(response => {
+            const status = response.status;
+            assert.equal(200, status);
+            assert.isNotNull(response.body.access_token, 'Access token is present');
+            accessToken3 = response.body.access_token;
+            cy.log('Access Token:', accessToken3);
+        });
+    });
     // delete user1
     it('response code should be 200 and user1 should be deleted', () => {
         cy.request({
