@@ -24,6 +24,11 @@ jobs:
           mkdir -p results/cypress-report
           mkdir -p results/cypress-test-results
 
+      - name: Create dummy test result files
+        run: |
+          echo "<html><body>Dummy report content</body></html>" > results/cypress-report/dummy-report.html
+          echo '{"dummy": "test result content"}' > results/cypress-test-results/dummy-test-result.json
+
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         env:
