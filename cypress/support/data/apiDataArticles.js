@@ -54,7 +54,7 @@ export const article3DataPATCH = {
 
 // new articles PUT
 
-// articleNew1 
+// newArticle1Data 
 export const newArticle1Data = {
     title: 'XXX.',
     body: 'XXXch ppppppppppppppppppppppsssssssssssssss.',
@@ -62,7 +62,7 @@ export const newArticle1Data = {
     image: '6.jpg'
 };
     
-// articleNew2 
+// ewArticle2Data 
 export const newArticle2Data = {
     title:'kkkkkkK.',
     body: 'PPPPPPPPPPPPP',
@@ -70,7 +70,7 @@ export const newArticle2Data = {
     image: '7894.jpg'
 };
 
-// articleNew3 
+// newArticle3Data  
 export const newArticle3Data = {
     title:'AOPopOPOP',
     body : 'bgcygfEYHVE ',

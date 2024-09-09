@@ -220,6 +220,9 @@ it('response code should be 200 and should update newArticle1Data', () => {
     });
 });
     // update article2 PUT newArticle2Data
+
+    // I check the section again - locally it's ok
+    
 it('response code should be 200 and should update newArticle2Data', () => {
     cy.request({
         method: 'PUT',
